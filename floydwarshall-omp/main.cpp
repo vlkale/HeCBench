@@ -217,6 +217,9 @@ int main(int argc, char** argv) {
         }
       }
     }
+     
+     // heterogeneous bug - need taskwait here 
+
 #pragma omp target update from (pathDistanceMatrix[0:matrixSize]) 
   }
 
